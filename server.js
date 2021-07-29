@@ -3,9 +3,15 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
+const port = process.env.PORT || 3000;
 
 require('./app/Routes/index')(app);
 
 app.use(cors());
 app.use(express.json());
-app.listen(3333);
+/* app.listen(port); */
+
+/* Exibindo uma mensagem de sucesso no console ao funcionamento de êxito da api */
+app.listen(port, function () {
+    console.log('Server ON Port ' + port);
+});
