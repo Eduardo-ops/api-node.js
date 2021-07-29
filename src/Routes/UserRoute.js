@@ -1,4 +1,10 @@
-/* Arquivo referente a todas as rotas do usuário. */
+/* 
+Arquivo referente a todas as rotas do usuário. 
+Toda vez que criarmos uma rota para um determinado
+objeto, seja ele um product ou qualquer outro a mais
+devemos importar ele em index.js como está feito com 
+Usuario
+*/
 
 /* Variável constante "UserController" que tem por exigência,
 permitir o acesso aos métodos de UserController em Controller. */
