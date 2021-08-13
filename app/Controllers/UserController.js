@@ -6,7 +6,8 @@
 exports.post = (req, res, next) => {
     const name = req.body.name;
     const email = req.body.email;
-    return res.json([name, email]);
+    const contato = req.body.contato
+    return res.json([name, email,contato]);
     /* Status de retorno com sucesso. */
     /* res.status(201).send('Rota POST!'); */
 };
